@@ -1,0 +1,237 @@
+@import "font";
+
+$primary-color: #264653;
+$secondary-color: #d6df22;
+$green-color: #6eaf0f;
+
+@font-face {
+    font-family: "Regular";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Black";
+    src: url(../fonts/Lato-Black.ttf);
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Regular";
+    background-color: #f5f5f5;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.auth-title {
+    color: $primary-color;
+    font-size: 1.5rem;
+    font-family: "Regular";
+}
+
+.font-regular {
+    font-family: "Regular" !important;
+}
+
+.font-bold {
+    font-family: "Bold" !important;
+}
+
+.font-black {
+    font-family: "Black" !important;
+}
+
+.top-35 {
+    top: 30%;
+    position: absolute;
+}
+
+.color-primary {
+    color: $primary-color;
+}
+
+.color-secondary {
+    color: $secondary-color;
+}
+
+.color-green {
+    color: $green-color;
+}
+
+.logo {
+    width: 15rem;
+    display: block;
+    margin: 0px auto;
+    margin-top: 2rem;
+}
+
+.auth-card {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border: 0px;
+    border-radius: 20px;
+}
+
+.form-control {
+    height: 40px;
+    font-size: 14px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: $secondary-color;
+}
+
+.btn-green {
+    background-color: $secondary-color;
+    border-color: $primary-color;
+    color: $primary-color;
+}
+
+.btn-green:hover {
+    background-color: $primary-color;
+    color: $primary-color;
+    color: #ffffff;
+}
+
+.auth-in-social-ul {
+    display: block;
+    text-align: center;
+}
+
+.auth-in-social-ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.auth-in-social-ul li a img {
+    width: 1.4rem;
+}
+
+.horizontal-ul-list {
+    display: block;
+}
+
+.horizontal-ul-list li {
+    display: inline-block;
+    margin-right: 6rem;
+    font-size: 1.5rem;
+    color: $secondary-color;
+    font-family: "Bold";
+}
+
+.left-content {
+    position: relative;
+    top: 30%;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+    background-color: #3a3af4 !important;
+    box-shadow: none !important;
+}
+
+.auth-bg{
+    background-color: #264653;
+}
+
+// .login-bg {
+//     background-color: #264653;
+//     background-size: cover;
+//     padding-bottom: 40px;
+// }
+
+@media screen and (min-width: 250px) and (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+    .login-bg {
+        background-color: #264653;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .logo {
+        width: 10rem;
+        margin: 0px auto;
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .auth-card {
+        box-shadow: none !important;
+    }
+
+    .mx-4 {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+
+    .px-4 {
+        padding-right: 0.2rem !important;
+        padding-left: 0.2rem !important;
+    }
+
+    form .row {
+        margin-top: 0px !important;
+    }
+
+    .mob-mt-3 {
+        margin-top: 1rem !important;
+    }
+
+    h1 {
+        margin-bottom: 0px !important;
+    }
+
+    .btn-green {
+        font-size: 14px !important;
+    }
+
+    .pb-5,
+    .pt-5 {
+        padding-bottom: 0.5rem !important;
+        padding-top: 0.5rem !important;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 720px) {
+    .mob-mt-3 {
+        margin-top: 1rem !important;
+    }
+
+    form .row {
+        margin-top: 0px !important;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1024px) {
+    .mob-mt-3 {
+        margin-top: 1rem !important;
+    }
+
+    form .row {
+        margin-top: 0px !important;
+    }
+}
